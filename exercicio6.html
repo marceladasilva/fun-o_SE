@@ -12,15 +12,15 @@
 <script>
 let nome1 = prompt("Digite o primeiro nome do funcionario.")
 let vendas = Number(prompt("Digite o tanto este funcionario vende."))
-let comissao = (vendas * Number(1))
+let comissao;
 let resul;
 
 if(vendas <= 250){
-
+comissao = (vendas * Number(1))
 resul = "Este funcionario: " + nome1 + " e receberá R$ " + comissao
 }
 
-else if(vendas >= 250 && vendas<= 499){
+else if(vendas<= 500){
 comissao = (vendas * Number(1.50))
 resul = "Este funcionario: " + nome1 + " e receberá R$ " + comissao
 }
