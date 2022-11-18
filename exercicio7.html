@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio7</title>
+</head>
+<body>
+<h1>Data</h1>
+<div id="date"></div>
+<script>
+let dia = prompt("Digite o dia.")
+let mes = Number(prompt("Digite o mes."))
+let ano = Number(prompt("Digite o ano."))
+let exibir;
+
+if(mes == 01){
+    resul = " Data: " + dia + " De Janeiro " + ano
+}
+else if(mes == 02){
+    resul = " Data: " + dia + " De Fevereiro " + ano
+}
+else if(mes == 03){
+    resul = " Data: " + dia + " De Março " + ano
+}
+else if(mes == 04){
+    resul = " Data: " + dia + " De Abril " + ano
+}
+else if(mes == 05){
+    resul = " Data: " + dia + " De Maio " + ano
+}
+else if(mes == 06){
+    resul = " Data: " + dia + " De Junho " + ano
+}
+else if(mes == 07){
+    resul = " Data: " + dia + " De Julho " + ano
+}
+else if(mes == 08){
+    resul = " Data: " + dia + " De Agosto" + ano
+}
+else if(mes == 09){
+    resul = " Data: " + dia + " De Setembro " + ano
+}
+else if(mes == 10){
+    resul = " Data: " + dia + " De Outubro " + ano
+}
+else if(mes == 11){
+    resul = " Data: " + dia + " De Novembro " + ano
+}
+else if(mes == 12){
+    resul = " Data: " + dia + " De Dezembro " + ano
+}
+document.getElementById("date").innerHTML = resul;
+
+
+</script>
+    
+</body>
+</html>

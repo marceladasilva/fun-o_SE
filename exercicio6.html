@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciico6</title>
+</head>
+<body>
+<h1>Comissão Dos Funcionarios</h1>
+<div id="comm"></div>
+<script>
+let nome1 = prompt("Digite o primeiro nome do funcionario.")
+let vendas = Number(prompt("Digite o tanto este funcionario vende."))
+let comissao = (vendas * Number(1))
+let resul;
+
+if(vendas <= 250){
+
+resul = "Este funcionario: " + nome1 + " e receberá R$ " + comissao
+}
+
+else if(vendas >= 250 && vendas<= 499){
+comissao = (vendas * Number(1.50))
+resul = "Este funcionario: " + nome1 + " e receberá R$ " + comissao
+}
+
+else if(vendas >= 500){
+comissao = (vendas * Number(2))
+resul = "Este funcionario: " + nome1 + " e receberá R$ " + comissao
+}
+document.getElementById("comm").innerHTML = resul ;
+
+</script>
+    
+</body>
+</html>

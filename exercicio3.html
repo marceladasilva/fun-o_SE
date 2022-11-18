@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+</head>
+<body>
+<h1>Lanchonete</h1>
+<h4>opção 1 - promoção! Big Super Sanduba - Especificações = 2 hambúrgueres, queijo, batata frita e refrigerante - preço R$ 5,00</h4>
+
+<h4>opção 2 - promoção! Quase Super Sanduba - Especificações = 1 hambúrgueres, queijo, batata frita e refrigerante - preço R$ 3,00</h4>
+
+<h4>opção 3 - promoção! Quase Super Sanduba - Especificações = 1 misto quente e refrigerante - preço R$ 1,50</h4>
+
+<div id="Lanchonete"></div>
+<script>
+const valor_opcao1 = 5.00;
+const valor_opcao2 = 3.00;
+const valor_opcao3 = 1.50;
+
+let cliente = prompt("Qual o seu nome?");
+let opcao = prompt("Qual opção você quer?");
+
+if(opcao == 1){
+    resul = "cliente: " + cliente + "Seu valor a pagar é de: R$ " + valor_opcao1
+}
+else if(opcao == 2){
+    resul = "cliente: " + cliente + "Seu valor a pagar é de: R$ " + valor_opcao2
+}
+else if(opcao == 3){
+    resul = "cliente: " + cliente + "Seu valor a pagar é de: R$ " + valor_opcao3
+}
+document.getElementById("Lanchonete").innerHTML = resul;
+</script>
+    
+</body>
+</html>
